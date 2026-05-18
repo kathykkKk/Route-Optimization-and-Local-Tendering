@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Data & artifacts (large)
+data/raw/*.json
+data/raw/*.db
+data/processed/*.dat
+output/
+*.pkl
+cross_matrix.dat
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Numba cache
+*.nbc
+.numba_cache/
+
+# LKH (vendor binary, keep locally)
+LKH-3.0.13/
+
+# Logs
+*.log
+
