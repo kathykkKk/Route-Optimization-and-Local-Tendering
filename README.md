@@ -309,21 +309,3 @@ PYTHONPATH=. python -c "from optimization.solvers.tsp.registry import solve_inne
 | `No module named 'polars'` | `pip install -r requirements.txt` |
 | `AMPL license UUID missing` | `export AMPL_LICENSE_UUID=...` или не используйте Gurobi solver |
 | Долгий первый запуск | Нормально: построение `cross_matrix.dat` и SA |
-
----
-
-## Разработка
-
-```bash
-# Линтер
-ruff check optimization tests
-
-# Git-история (ветки/коммиты)
-# см. docs/GIT_WORKFLOW.md
-```
-
----
-
-## Лицензия
-
-Уточните лицензию репозитория. Данные Ozon и бинарники LKH/Gurobi распространяются по своим условиям.
