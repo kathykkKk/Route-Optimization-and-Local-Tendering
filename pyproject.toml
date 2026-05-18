@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "route-optimization-local-tendering"
+version = "0.1.0"
+description = "Ozon logistics route optimization pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "polars>=0.20",
+  "ortools>=9.9",
+  "tqdm>=4.66",
+  "numba>=0.59",
+  "matplotlib>=3.8",
+  "deap>=1.4",
+]
+
+[project.optional-dependencies]
+ampl = ["amplpy>=0.13"]  # for inner_tsp_solver=gurobi_ampl
+dev = ["pytest>=8.0", "ruff>=0.4"]
+
+[project.scripts]
+route-optimize = "optimization.pipeline.run_pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["optimization*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
