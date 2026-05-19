@@ -1,6 +1,6 @@
 # Route Optimization and Local Tendering
 
-Система оптимизации маршрутов курьеров для логистики Ozon: назначение полигонов, TSP внутри и между полигонами, simulated annealing, rebalance и финальная доводка (LKH). Проект — модульный рефакторинг ноутбука `final optimization solution-Copy4.ipynb`.
+Система оптимизации маршрутов курьеров для логистики Ozon: назначение полигонов, TSP внутри и между полигонами, simulated annealing, rebalance и финальная доводка (LKH).
 
 ---
 
